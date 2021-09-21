@@ -4,24 +4,21 @@ import turtle
 
 def test_init():
     pixart.init()
-    
-    s=turtle.speed()
-    assert(s==0)
 
-    x=turtle.xcor()
-    assert(x==-300)
+    s = turtle.speed()
+    assert (s == 0)
 
-    y=turtle.ycor()
-    assert(y==300)
+    x = turtle.xcor()
+    assert (x == -200)
 
-    a=turtle.isdown()
-    assert(a==false)
+    y = turtle.ycor()
+    assert (y == 200)
 
-    p=turtle.pencolor()
-    assert(p=='black')
+    a = turtle.isdown()
+    assert (a == True)
 
-    f=turtle.fillcolor()
-    assert(f=='white')
+    p = turtle.pencolor()
+    assert (p == 'black')
 
-
-    
+    f = turtle.fillcolor()
+    assert (f == 'white')
